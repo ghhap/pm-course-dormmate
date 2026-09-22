@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DormMate Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Підключення шрифту Montserrat з Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Головна біла/бежева картка-плашка на весь інтерфейс -->
+  <div class="app-layout">
+
+    <!-- ЛІВИЙ САЙДБАР -->
+    <aside class="sidebar">
+      
+      <!-- Логотип -->
+      <div class="brand-logo">
+        <div class="logo-mark">
+          <span class="logo-u">U</span>
+          <span class="logo-m">M</span>
+        </div>
+        <div class="brand-name">
+          <span>DORM</span>
+          <strong>MATE</strong>
+        </div>
+      </div>
+
+      <!-- Картка профілю -->
+      <div class="profile-box">
+        <div class="avatar-ring">
+          <img 
+            src="https://images.unsplash.com/photo-1535268647677-300dbf3d78d1?auto=format&fit=crop&w=260&q=80" 
+            alt="Аватар користувача" 
+            class="user-avatar"
+          >
+        </div>
+        <h3 class="user-fullname">Мельничук Анастасія</h3>
+        <p class="user-room-label">128 кімната</p>
+      </div>
+
+      <!-- Кнопки навігації сайдбару -->
+      <nav class="sidebar-menu">
+        <button type="button" class="sidebar-btn active">
+          <span class="btn-icon">👤</span>
+          <span>Кабінет</span>
+        </button>
+        <button type="button" class="sidebar-btn">
+          <span class="btn-icon">✉️</span>
+          <span>Повідомлення</span>
+        </button>
+        <button type="button" class="sidebar-btn">
+          <span class="btn-icon">🚪</span>
+          <span>Вийти</span>
+        </button>
+      </nav>
+
+      <!-- Нижня закріплена кнопка -->
+      <div class="sidebar-footer">
+        <button type="button" class="sidebar-btn">
+          <span class="btn-icon">⚙️</span>
+          <span>Налаштування</span>
+        </button>
+      </div>
+
+    </aside>
+
+    <!-- ОСНОВНА ЧАСТИНА (ПРАВА) -->
+    <main class="content-area">
+
+      <!-- Верхнє горизонтальне меню -->
+      <header class="top-nav-bar">
+        <nav class="nav-links">
+          <a href="#" class="nav-item active">Головна</a>
+          <a href="#" class="nav-item">Оголошення</a>
+          <a href="#" class="nav-item">Послуги</a>
+          <a href="#" class="nav-item">Опитування</a>
+          <a href="#" class="nav-item">Контакти</a>
+        </nav>
+      </header>
+
+      <!-- Сітка блоків (2 стовпчики) -->
+      <section class="dashboard-grid">
+
+        <!-- 1. БЛОК: Оголошення -->
+        <article class="panel-card announcements-card">
+          <div class="panel-heading">
+            <span class="panel-icon">🔔</span>
+            <h2 class="panel-title">Оголошення</h2>
+          </div>
+
+          <div class="announcements-list">
+            <a href="#" class="announcement-row">
+              <div class="announcement-info">
+                <h4>Дезінсекція тарганів</h4>
+                <span class="event-date">10.09.2026</span>
+              </div>
+              <span class="chevron-arrow">›</span>
+            </a>
+
+            <a href="#" class="announcement-row">
+              <div class="announcement-info">
+                <h4>Вечір кіно в читальній залі</h4>
+                <span class="event-date">19.09.2026</span>
+              </div>
+              <span class="chevron-arrow">›</span>
+            </a>
+
+            <a href="#" class="announcement-row">
+              <div class="announcement-info">
+                <h4>Тимчасово пралки не працюватимуть</h4>
+                <span class="event-date">11.09.2026</span>
+              </div>
+              <span class="chevron-arrow">›</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- 2. БЛОК: Заявки на ремонт -->
+        <article class="panel-card repairs-card">
+          <div class="panel-heading-row">
+            <div class="panel-heading">
+              <span class="panel-icon">📋</span>
+              <h2 class="panel-title">Заявки на ремонт</h2>
+            </div>
+            <button type="button" class="pill-action-btn">Подати заявку</button>
+          </div>
+
+          <!-- Таблиця з даними заявок -->
+          <div class="table-container">
+            <table class="requests-table">
+              <thead>
+                <tr>
+                  <th class="col-desc">Опис проблеми</th>
+                  <th class="col-date">Дата</th>
+                  <th class="col-status">Статус</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <strong>Сантехніка</strong>
+                    <p>Не працює кран 1 поверх на кухні боковій кухні</p>
+                  </td>
+                  <td class="cell-date">07.09</td>
+                  <td><span class="badge badge-pending">Активно</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Електрика</strong>
+                    <p>Знову згоріла розетка в 128 кімн.</p>
+                  </td>
+                  <td class="cell-date">04.09</td>
+                  <td><span class="badge badge-done">Виконано</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Електрика</strong>
+                    <p>Згоріла розетка в 128 кімн.</p>
+                  </td>
+                  <td class="cell-date">01.09</td>
+                  <td><span class="badge badge-done">Виконано</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <!-- 3. БЛОК: Загублені речі -->
+        <article class="panel-card lost-found-card">
+          <div class="panel-heading">
+            <span class="panel-icon">⏱️</span>
+            <h2 class="panel-title">Загублені речі</h2>
+          </div>
+
+          <div class="lost-items-list">
+            <a href="#" class="lost-item-card">
+              <div class="lost-item-thumb">
+                <span class="thumb-emoji">🔑</span>
+              </div>
+              <div class="lost-item-content">
+                <h4>ЗНАЙДЕНО КЛЮЧІ</h4>
+                <p>Знайдено ключ в укритті. Забрати можна на вахті, більше не губіть</p>
+              </div>
+              <span class="chevron-arrow">›</span>
+            </a>
+
+            <a href="#" class="lost-item-card">
+              <div class="lost-item-thumb student-card-thumb">
+                <span class="thumb-emoji">🪪</span>
+              </div>
+              <div class="lost-item-content">
+                <h4>ЗАГУБЛЕНО СТУДЕНТСЬКИЙ</h4>
+                <p>Загублено студентський біля гуртожитку на ім'я Грибенко Едуард. Хто знайде поверніть, за винагороду</p>
+              </div>
+              <span class="chevron-arrow">›</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- 4. БЛОК: Опитування мешканців -->
+        <article class="panel-card poll-card">
+          <div class="panel-heading">
+            <span class="panel-icon">📊</span>
+            <h2 class="panel-title">Опитування мешканців</h2>
+          </div>
+
+          <div class="poll-content">
+            <div class="poll-question-meta">
+              <h4>Оновлення кухні. Що ви хочете бачити?</h4>
+              <span class="poll-duration">діє до 25.10</span>
+            </div>
+
+            <form class="poll-form">
+              <label class="radio-label">
+                <input type="radio" name="kitchen-poll" value="taps">
+                <span class="radio-custom"></span>
+                <span>Обновити крани</span>
+              </label>
+
+              <label class="radio-label">
+                <input type="radio" name="kitchen-poll" value="stoves">
+                <span class="radio-custom"></span>
+                <span>Обновити газові комфорки</span>
+              </label>
+
+              <label class="radio-label">
+                <input type="radio" name="kitchen-poll" value="tables">
+                <span class="radio-custom"></span>
+                <span>Обновити столи</span>
+              </label>
+
+              <label class="radio-label">
+                <input type="radio" name="kitchen-poll" value="light">
+                <span class="radio-custom"></span>
+                <span>Обновити світло</span>
+              </label>
+
+              <label class="radio-label">
+                <input type="radio" name="kitchen-poll" value="fine">
+                <span class="radio-custom"></span>
+                <span>Все влаштовує</span>
+              </label>
+
+              <button type="submit" class="poll-vote-btn">Проголосувати</button>
+            </form>
+
+            <div class="secondary-poll-preview">
+              <p>Оновлення кухні. Що ви хочете бачити?</p>
+              <span class="preview-date">діє до 01.09</span>
+            </div>
+          </div>
+        </article>
+
+      </section>
+
+    </main>
+
+  </div>
+
+</body>
+</html>
