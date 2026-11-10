@@ -25,8 +25,6 @@
 | Бронювання пральні | Перегляд вільних слотів, бронювання машин і скасування бронювань. | 3 |
 | **Разом** | | **12** |
 
-Епіки мають різні кольори. Для кожної User Story в Jira встановлено відповідний Parent (Epic).
-
 ## Product Backlog та MoSCoW
 
 | Jira Key | Story | Epic | Priority | Story Points | MoSCoW |
