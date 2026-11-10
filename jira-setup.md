@@ -11,7 +11,7 @@
 
 ## Board Settings
 
-- **Columns:** To Do («К виконанню») → In Progress («У роботі») → In Review («На перевірці») → Done («Готово»).
+- **Columns:** To Do («Зробити») → In Progress («У роботі») → In Review («На перевірці») → Done («Готово»).
 - **Estimation:** Story Points (`Story point estimate`).
 - **Backlog and Sprints:** Увімкнені.
 
